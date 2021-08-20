@@ -1,0 +1,13 @@
+<h1>List created!</h1>
+<p><strong><%= @list.name %></strong></p>
+<%= link_to "delete", list_path(@list), method: :delete %>
+<div class="container">
+  <% @bookmarks.each do |bookmark| %>
+    <div class="card">
+    <img class="card-img-top" src="<%= bookmark.movie.poster_url%>">
+      <%= bookmark.movie.title %> - <%= link_to "delete", bookmark_path(bookmark), method: :delete %>
+    </div>
+  <% end %>
+</div>
+<%= link_to "Add movie", new_list_bookmark_path(@list), class: "btn btn-primary" %>
+<%= link_to "Homepage", root_path, class: "btn btn-primary" %>

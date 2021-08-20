@@ -1,0 +1,17 @@
+
+.banner {
+  background-image: url("https://i.guim.co.uk/img/media/bd4392500897ef3ad6a5d7a51a2b6a0e02f571f5/0_0_4115_2713/master/4115.jpg?width=445&quality=45&auto=format&fit=max&dpr=2&s=2f808f395235b279967252ac049fe7ba");
+  background-size: cover;
+  height: 60vh; 
+  width: 70vw;
+  margin:  0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ .banner h1 {
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+   }
+
